@@ -1,0 +1,56 @@
+
+REACT GALLERY WEEKEND PROJECT
+
+SETUP
+[x] Add images to /public/images
+[x] Update data object array server/modules/gallery.data.js
+[x] npm install dependencies
+[x] start server
+[x] start client
+
+BASE MODE - pass props, make components
+[] Components
+    [x] App - overall site app
+    [x] render dom on load
+    [] render dom after each click
+
+    [] GalleryList - image gallery
+        [x] <h1>My Gallery</h1> gallery header
+        [x] pass to GalleryList data from App as props
+        [] loop over items in gallery array 
+            [] galleryList.map(list=>addItems) 
+            [] render list to DOM
+
+    [] GalleryItem - single image 
+        [x] pass to GalleryItem data from GalleryList as props
+        [] 100x100 px square image size
+        [] onClick - render image caption in place of image
+            "My dog at Willow River Sate Park"
+        [x] button - like
+            [] button event response
+        [] <h3>${5}</h3> - like counter
+            [] if zero render "No likes yet!"
+
+Routes
+[] Routes
+[] GET - data from public/images
+[] PUT - update counter variable, DOM when button clicked
+
+
+STRETCH
+[] git branching for each feature
+[] POST - add image with upload file button 
+
+
+[] move data to db react_gallery
+[] add database.sql file to project
+
+[] POST - client - form component allow user to add new image using URL
+[] POST - server - add url to db
+
+[] DELETE - CLIENT - add button to gallery items
+[] DELETE - server - delete row from db
+
+[] vanilla css styling
+[] Material UI styling
+[] implement https://uppy.io/ for image upload 
