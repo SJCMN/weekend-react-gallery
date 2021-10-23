@@ -10,12 +10,6 @@ function GalleryItem ({path, description, id, likes, likeItem}) {
     const handleClick = () => {
         console.log('clicked');
         setDescriptionToggle(!descriptionToggle)
-        // if(e){
-        // dogDiv = <p>{description}</p>
-        // } else {
-        // dogDiv = <img src={path}/>
-        // }
-  
     }
   
     return (
@@ -23,13 +17,12 @@ function GalleryItem ({path, description, id, likes, likeItem}) {
             <div className="tile">
                 <div className="tileImg" onClick={handleClick}>
                     {descriptionToggle ? <img src={path}/> : <p>{description}</p>}
-                    {/* {dogDiv} */}
                         </div>
-                            <div>
+                            <div className="btnArea">
                                 <button className="likeBtn" onClick={() => likeItem(id)}>Like This!</button>
                             </div>
                         <div className="likeCount">
-                    <h5 >{likes > 0 ? `${likes} friends like this!` : `This pup needs some friends!`}</h5>
+                    <h5>{likes > 0 ? `${likes} friends like this!` : `This pup needs some friends!`}</h5>
                 </div>
             </div>
         </>

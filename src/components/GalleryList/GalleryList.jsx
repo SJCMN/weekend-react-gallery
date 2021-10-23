@@ -1,6 +1,6 @@
 import axios from 'axios'
 import GalleryItem from '../GalleryItem/GalleryItem.jsx'
-
+import './GalleryList.css'
 
 
 function GalleryList ({newGalleryItems, getGalleryItems}) {
@@ -21,7 +21,8 @@ function GalleryList ({newGalleryItems, getGalleryItems}) {
 
     return (
         <>
-            <h1>Cattle Dog Gallery</h1>
+            <h1 >Cattle Dog Gallery</h1>
+            <div class="container">
                 {newGalleryItems.map((galleryItem) => (
                     <GalleryItem 
                     key={galleryItem.id}
@@ -31,7 +32,8 @@ function GalleryList ({newGalleryItems, getGalleryItems}) {
                     likes={galleryItem.likes}
                     likeItem={likeItem}
                 />
-            ))}            
+            ))} 
+            </div>           
         </>
     )
 }
