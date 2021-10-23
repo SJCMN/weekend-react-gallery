@@ -17,9 +17,9 @@ BASE MODE - pass props, make components
     [] GalleryList - image gallery
         [x] <h1>My Gallery</h1> gallery header
         [x] pass to GalleryList data from App as props
-        [] loop over items in gallery array 
-            [] galleryList.map(list=>addItems) 
-            [] render list to DOM
+        [x] loop over items in gallery array 
+            [x] galleryList.map(list=>addItems) 
+            [x] render list to DOM
 
     [] GalleryItem - single image 
         [x] pass to GalleryItem data from GalleryList as props

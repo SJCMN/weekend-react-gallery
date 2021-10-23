@@ -1,16 +1,21 @@
-function GalleryItem () {
 
+
+function GalleryItem ({path, description, id, likes, likeItem}) {
+
+
+  
     return (
        <>
             <div>
                 <div>
-                    <img src="../images/goat_small.jpg"/>
+                    <img src={path}/>
+                    <p>{description}</p>
                         </div>
                             <div>
-                                <button>Like This!</button>
+                                <button onClick={() => likeItem(id)}>Like This!</button>
                             </div>
                         <div>
-                    <h5>4 friends like this!</h5>
+                    <h5>{likes} friends like this!</h5>
                 </div>
             </div>
         </>
@@ -19,3 +24,5 @@ function GalleryItem () {
 }
 
 export default GalleryItem;
+
+
