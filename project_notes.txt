@@ -7,12 +7,13 @@ SETUP
 [x] npm install dependencies
 [x] start server
 [x] start client
+[] update readme.md
 
 BASE MODE - pass props, make components
-[] Components
+[x] Components
     [x] App - overall site app
     [x] render dom on load
-    [] render dom after each click
+    [x] render dom after each click
 
     [] GalleryList - image gallery
         [x] <h1>My Gallery</h1> gallery header
@@ -27,14 +28,14 @@ BASE MODE - pass props, make components
         [] onClick - render image caption in place of image
             "My dog at Willow River Sate Park"
         [x] button - like
-            [] button event response
-        [] <h3>${5}</h3> - like counter
+            [x] button event response
+        [x] <h3>${5}</h3> - like counter
             [] if zero render "No likes yet!"
 
 Routes
-[] Routes
-[] GET - data from public/images
-[] PUT - update counter variable, DOM when button clicked
+[x] Routes
+[x] GET - data from public/images
+[x] PUT - update counter variable, DOM when button clicked
 
 
 STRETCH
