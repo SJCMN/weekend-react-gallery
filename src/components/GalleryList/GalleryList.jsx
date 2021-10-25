@@ -22,7 +22,7 @@ function GalleryList ({newGalleryItems, getGalleryItems}) {
     return (
         <>
             <h1 >Cattle Dog Gallery</h1>
-            <div class="container">
+            <div className="container">
                 {newGalleryItems.map((galleryItem) => (
                     <GalleryItem 
                     key={galleryItem.id}

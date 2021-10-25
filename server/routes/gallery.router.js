@@ -6,7 +6,7 @@ const galleryItems = require('../modules/gallery.data');
 
 // PUT Route
 router.put('/like/:id', (req, res) => {
-    console.log(req.params);
+    // console.log(req.params);
     const galleryId = req.params.id;
     for(const galleryItem of galleryItems) {
         if(galleryItem.id == galleryId) {
@@ -20,5 +20,17 @@ router.put('/like/:id', (req, res) => {
 router.get('/', (req, res) => {
     res.send(galleryItems);
 }); // END GET Route
+
+// DELETE route
+router.delete('/like/:id', (req, res) => {
+    console.log('DELETE id',req.params.id);
+    const deleteId = req.params.id;
+    for(const galleryItem of galleryItems) {
+        if(galleryItem.id == deleteId ) {
+            galleryItem.pop(galleryItem.id);
+        }
+    }
+    res.sendStatus(200);
+}); // END DELETE Route
 
 module.exports = router;
